@@ -20,7 +20,8 @@ Vue.prototype.putRequest = putRequest;
 Vue.prototype.getRequest = getRequest;
 Vue.prototype.deleteRequest = deleteRequest;
 
-Vue.use(ElementUI)
+//给全局的组件设置样式，如果在组件中单独设置，则局部优先级大于全局优先级
+Vue.use(ElementUI,{size:'small'})
 
 Vue.config.productionTip = false
 
